@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user-role>
+    <command id="insert">
+        INSERT INTO user_roles VALUES(?, ?, ?);
+    </command>
+</user-role>

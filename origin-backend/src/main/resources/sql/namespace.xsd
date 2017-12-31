@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" 
+    xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+    <!-- define user-role tag -->
+    <xs:element name="user-role">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- define command tag -->
+                <xs:element name="command">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="id" use="required" type="xs:ID" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
