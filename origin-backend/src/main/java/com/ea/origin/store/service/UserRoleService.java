@@ -19,8 +19,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserRoleService implements UserRoleDAO {
+public class UserRoleService {
+//public class UserRoleService implements UserRoleDAO {
 
+    /*
     private JdbcTemplate jdbcTemplate;
 
     private Logger logger = LogManager.getLogger(this.getClass());
@@ -42,5 +44,6 @@ public class UserRoleService implements UserRoleDAO {
             logger.error(e);
             throw new ExecuteRuntimeException(ExceptionCode.UNEXPECTED_EXCEPTION, ExceptionMessage.UNEXPECTED_EXCEPTION_MESSAGE, e);
         }
-	}
+    }
+    */
 }
